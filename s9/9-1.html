@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function kansuu() {
+            alert("OK!!");
+        }
+        function kakunin() {
+            if (window.confirm("よろしいですか？")) {
+                return true;        // サブミットする、リンクする
+            } else {
+                return false;       // サブミットしない、リンクジャンプしない
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <input type="button" value="OK" onclick="alert('OK!!!')">
+    <input type="button" value="OK_function" onclick="kansuu()">
+    <a href="9-1.txt" onclick="return kakunin()">Rink</a>
+
+    <form action="xxx.cgi">
+        <input type="submit" value="OK" onclick="return kakunin('OK');">
+    </form>
+    <input type="button" value="Hover your mouse." onmousedown="document.getElementById('t2').innerHTML += '[Down]'"
+        onmouseup="document.getElementById('t2').innerHTML += '[Up]'"
+        onmouseover="document.getElementById('t2').innerHTML += '[Over]'"
+        onmouseout="document.getElementById('t2').innerHTML += '[Out]'"
+        onmousemove="document.getElementById('t2').innerHTML += '[Move]'">
+    <div id="t2">Event: </div>
+    <script>
+        window.onload = function () { alert("Hello!"); };
+    </script>
+</body>
+
+</html>
