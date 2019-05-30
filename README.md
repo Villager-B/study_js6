@@ -11,3 +11,5 @@ JavaScriptの学習
 - [**型などの基本情報**](http://www.tohoho-web.com/js/basic.htm)
 
 - [**演算子の優先順位**](http://www.tohoho-web.com/js/operator.htm#precedence)
+
+- [**Date型の扱い**](http://www.tohoho-web.com/js/date.htm)
